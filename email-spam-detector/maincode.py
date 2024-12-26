@@ -37,9 +37,11 @@ model = LogisticRegression() # used for binary classification
 model.fit(x_train, y_train) # establishes relationship b/w the inputs and the labels
 y_pred = model.predict(x_test) # predicts class labels
 accuracy = accuracy_score(y_test, y_pred) # compares the testing data with the predictions to determine accuracy
-print(accuracy)
-print(confusion_matrix(y_test, y_pred))
-print(classification_report(y_test, y_pred))
+print(f"accuracy: {accuracy}")
+print()
+print(f"confusion matrix: \n {confusion_matrix(y_test, y_pred)}")
+print()
+print(f"classification report:\n{classification_report(y_test, y_pred)}")
 
 
 import seaborn as sns
