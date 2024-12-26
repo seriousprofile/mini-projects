@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-dataframe = pd.read_csv("C:\\Users\\Nandi\\Downloads\\spamemails\\emails.csv")
+dataframe = pd.read_csv("C:\\Users\\User\\Downloads\\spamemails\\emails.csv")
 print(dataframe.head())
 #print(dataframe.info())
 #print(dataframe['label'].value_counts())
